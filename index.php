@@ -12,6 +12,10 @@ Flight::route('/', function () {
     Flight::render('index.php', array('title' => 'GAFF'));
 });
 
+Flight::route('/products', function () {
+    Flight::render('products.php', array('title' => 'Products'));
+});
+
 #404
 Flight::map('notFound', function () {
     // Display custom 404 page

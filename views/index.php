@@ -118,7 +118,7 @@
                 ?>
                 <div class="grid--3cols">
                     <?php foreach ($productosBanner as $producto): ?>
-                        <div class="banner-productos__item">
+                        <a class="banner-productos__item" href="#">
                             <div class="banner-productos--img">
                                 <img src="<?php echo __ROOT__; ?>/public/img/home/p<?php echo $producto['id'] ?>.png"
                                      alt="icon">
@@ -127,7 +127,7 @@
                                 <span class="poppins-bold text--lg text--orange mb-2"><?php echo $producto['numero']; ?></span>
                                 <h3 class="poppins-regular text--sm text--black mb-2"><?php echo $producto['nombre']; ?></h3>
                             </div>
-                        </div>
+                        </a>
                     <?php endforeach; ?>
                 </div>
             </main>

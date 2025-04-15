@@ -182,6 +182,29 @@ html {
     border-right: 2px solid var(--orange);
 }
 
+.products__hero {
+    position: relative;
+}
+
+.products__hero > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    align-content: center;
+}
+
+.pagination a {
+    color: var(--orange);
+}
+
+.pagination a:hover {
+    color: var(--black);
+}
+
 @media (max-width: 768px) {
     .home__hero .hero__content {
         width: 100%;

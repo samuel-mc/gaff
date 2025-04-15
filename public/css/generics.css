@@ -166,6 +166,10 @@
     color: var(--orange);
 }
 
+.text--cyan {
+    color: var(--cyan);
+}
+
 a {
     text-decoration: none;
     color: inherit;
