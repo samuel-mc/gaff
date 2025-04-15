@@ -366,6 +366,13 @@ a {
     aspect-ratio: 1/1;
 }
 
+.word--break {
+    word-break: break-all;
+}
+
+textarea {
+    resize: none;
+}
 
 @media (max-width: 1400px) {
     .grid--5cols {
