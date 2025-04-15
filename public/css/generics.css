@@ -1,0 +1,410 @@
+:root {
+    --grey: #637381;
+    --light-grey: #D4D2E3;
+    --white-input: #F9F9FF;
+
+    /* New colors*/
+    --cyan: #009EE0;
+    --orange: #FF9015;
+    --black: #121C22;
+
+    --text-xs: 12px;
+    --text-sm: 16px;
+    --text-md: 20px;
+    --text-lg: 28px;
+    --text-xl: 40px;
+    --text-2xl: 64px;
+
+}.poppins-thin {
+     font-family: "Poppins", sans-serif;
+     font-weight: 100;
+     font-style: normal;
+ }
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.text--xs {
+    font-size: var(--text-xs);
+}
+
+.text--sm {
+    font-size: var(--text-sm);
+}
+
+.text--md {
+    font-size: var(--text-md);
+}
+
+.text--lg {
+    font-size: var(--text-lg);
+}
+
+.text--xl {
+    font-size: var(--text-xl);
+}
+
+.text--2xl {
+    font-size: var(--text-2xl);
+}
+
+.text--bold {
+    font-weight: bold;
+}
+
+.text--white {
+    color: white;
+}
+
+.text--grey {
+    color: var(--grey);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.a--white {
+    color: white;
+    transition: color 0.6s ease-in-out;
+}
+
+.a--white:hover {
+    color: var(--orange);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.a--orange {
+    color: var(--orange);
+    transition: color 0.6s ease-in-out;
+}
+
+.a--orange:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.a--cyan {
+    color: var(--cyan);
+    transition: color 0.6s ease-in-out;
+}
+
+.a--cyan:hover {
+    color: var(--orange);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.a--black {
+    color: var(--black);
+    transition: color 0.6s ease-in-out;
+}
+
+.a--black:hover {
+    color: var(--orange);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.bg--black {
+    background-color: var(--black);
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 2% 5%;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn--rounded {
+    border-radius: 50px;
+}
+
+.btn--square {
+    aspect-ratio: 1/1;
+}
+
+.grid--2cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid--3cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 12px;
+}
+
+
+.grid--4cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.grid--5cols {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.grid{
+    display: grid;
+}
+
+.gap--24 {
+    gap: 24px !important;
+}
+
+.w--50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.w--64 {
+    width: 64px;
+}
+
+.w--128 {
+    width: 128px;
+}
+
+.w--480 {
+    width: 480px;
+}
+
+.mw--280 {
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.mw-400 {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.mw--1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.h--64 {
+    height: 64px;
+}
+
+.h--320 {
+    height: 320px;
+}
+
+.h--fit {
+    height: fit-content;
+}
+
+.h--screen {
+    height: 100vh;
+}
+
+.w--fit {
+    width: fit-content;
+}
+
+.w--screen {
+    width: 100vw;
+}
+
+.list--unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.img--logo {
+    width: 92px;
+    height: 29px;
+}
+
+.p--container {
+    padding: 120px 60px;
+}
+
+.btnSlider{
+    background-color: #DBDBDB !important; 
+    height:80px !important; 
+    width: 80px !important; 
+    top:40% !important; 
+}
+
+.border--light-grey{
+    border: solid var(--light-grey);
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 1400px) {
+    .grid--5cols {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .grid--2cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid--4cols {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .w--50 {
+        width: 100%;
+    }
+
+    .w--480 {
+        width: 100%;
+    }
+
+    .p--container {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid--4cols {
+        grid-template-columns: 1fr;
+    }
+    .grid--5cols {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hr--r{
+        border-right: none;
+    }
+    .text--2xl {
+        font-size: var(--text-xl);
+    }
+
+    .grid--3cols {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .grid--3cols {
+        grid-template-columns: 1fr;
+    }
+    .grid--5cols {
+        grid-template-columns: 1fr;
+    }
+}
