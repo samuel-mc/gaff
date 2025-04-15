@@ -37,6 +37,101 @@ html {
     word-break: break-all;
 }
 
+.home__hero {
+    background-image: url("../img/home/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 540px;
+    align-content: center;
+}
+
+.home__hero .hero__content {
+    width: 50%;
+    align-content: center;
+    height: 100%;
+    padding: 12px 24px;
+    place-self: end;
+}
+
+.home__hero .hero__input--container {
+    border: 2px solid var(--orange);
+    display: flex;
+    max-width: 280px;
+}
+
+.home__hero .hero__input--container input {
+    border: none;
+    color: var(--black);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    outline: none;
+    padding: 18px 24px;
+}
+
+.home__hero .hero__input--container input::placeholder {
+    color: rgba(18, 28, 34, 0.52);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.home__hero .hero__input--container button {
+    background-color: var(--orange);
+}
+
+.categoria--orange {
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 229, 206, 1) 100%);
+}
+
+.categoria--blue {
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(212, 242, 255, 1) 100%);
+}
+
+.categoria--card {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 100%;
+}
+
+.categoria--card .categoria--img {
+    align-content: center;
+}
+
+.banner-productos__item {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    gap: 12px;
+    border-bottom: 2px solid var(--cyan);
+    padding: 12px 0;
+}
+
+.banner-productos__item .banner-productos--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-productos__item .banner-productos--img img {
+    width: 100%;
+    max-width: 240px;
+}
+
+@media (max-width: 768px) {
+    .home__hero .hero__content {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 24px 12px;
+    }
+
+}
+
 @keyframes appear {
     0% {
         opacity: 0;

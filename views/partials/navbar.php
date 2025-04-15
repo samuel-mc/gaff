@@ -51,7 +51,7 @@
 
         <!-- center -->
         <div>
-            <ul class="list-unstyled d-flex poppins-regular">
+            <ul class="list-unstyled d-flex poppins-regular p-0 m-0">
                 <li class="mx-3">
                     <a class="a--black" href="<?php echo __ROOT__; ?>/"> Inicio</a>
                 </li>
@@ -84,7 +84,7 @@
         </div>
     </div>
     <!-- bottom part - mobile -->
-    <div>
+    <div class="d-lg-none">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">

@@ -1,5 +1,5 @@
 :root {
-    --grey: #637381;
+    --grey: #969696;
     --light-grey: #D4D2E3;
     --white-input: #F9F9FF;
 
@@ -15,11 +15,13 @@
     --text-xl: 40px;
     --text-2xl: 64px;
 
-}.poppins-thin {
-     font-family: "Poppins", sans-serif;
-     font-weight: 100;
-     font-style: normal;
- }
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
 
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
@@ -160,6 +162,10 @@
     color: var(--grey);
 }
 
+.text--orange {
+    color: var(--orange);
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -218,7 +224,7 @@ a {
     padding: 2% 5%;
     transition: all 0.5s ease-in-out;
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
 
 .btn:hover {
@@ -259,7 +265,7 @@ a {
     gap: 12px;
 }
 
-.grid{
+.grid {
     display: grid;
 }
 
@@ -284,14 +290,20 @@ a {
     width: 480px;
 }
 
-.mw--280 {
-    max-width: 280px;
-    margin: 0 auto;
+.mh--240 {
+    max-height: 240px;
 }
 
-.mw-400 {
+.mw--280 {
+    max-width: 280px;
+}
+
+.mw--400 {
     max-width: 400px;
-    margin: 0 auto;
+}
+
+.mw--520 {
+    max-width: 520px;
 }
 
 .mw--1440 {
@@ -338,18 +350,21 @@ a {
     padding: 120px 60px;
 }
 
-.btnSlider{
-    background-color: #DBDBDB !important; 
-    height:80px !important; 
-    width: 80px !important; 
-    top:40% !important; 
+.btnSlider {
+    background-color: #DBDBDB !important;
+    height: 80px !important;
+    width: 80px !important;
+    top: 40% !important;
 }
 
-.border--light-grey{
+.border--light-grey {
     border: solid var(--light-grey);
     border-radius: 10px;
 }
 
+.aspect--square {
+    aspect-ratio: 1/1;
+}
 
 
 @media (max-width: 1400px) {
@@ -385,12 +400,15 @@ a {
     .grid--4cols {
         grid-template-columns: 1fr;
     }
+
     .grid--5cols {
         grid-template-columns: 1fr 1fr;
     }
-    .hr--r{
+
+    .hr--r {
         border-right: none;
     }
+
     .text--2xl {
         font-size: var(--text-xl);
     }
@@ -404,6 +422,7 @@ a {
     .grid--3cols {
         grid-template-columns: 1fr;
     }
+
     .grid--5cols {
         grid-template-columns: 1fr;
     }

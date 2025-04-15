@@ -1,5 +1,5 @@
 <footer class="bg--black px-4 py-4">
-    <div class="row m-0 p-0">
+    <div class="row m-0 p-0 mw--1440 mx-auto">
         <!-- left content -->
         <div class="col-lg-4 p-0 m-0 py-5">
             <div class="text-end mb-4">
