@@ -50,6 +50,26 @@ html {
     background-image: url("../img/acerca/hero.png") !important;
 }
 
+.enterate_hero {
+    background-image: url("../img/enterate/hero.png") !important;
+    min-height: 340px !important;
+}
+
+.contacto_hero {
+    background-image: url("../img/contacto/hero.png") !important;
+    min-height: 340px !important;
+}
+
+.faq_hero {
+    background-image: url("../img/faq/hero.png") !important;
+    min-height: 340px !important;
+}
+
+.videos_hero{
+    background-image: url("../img/videos/hero.png") !important;
+    min-height: 340px !important;
+}
+
 .home__hero .hero__content {
     width: 50%;
     align-content: center;
@@ -275,6 +295,48 @@ html {
     width: 100%;
 }
 
+/* Estilo base para las tabs */
+.nav-tabs-orange .nav-link {
+    background-color: #F7F7F7;
+    color: var(--grey);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+
+/* Tab activa */
+.nav-tabs-orange .nav-link.active {
+    background-color: #F7F7F7;
+    border-bottom: 3px solid #ff9015 !important;
+
+}
+
+.nav-tabs-faq .nav-link {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    font-weight: 400;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.nav-tabs-faq .nav-link.active {
+    color: var(--grey);
+    font-weight: 400;
+}
+
+.nav-tabs-faq .toggle-icon {
+    font-size: 1.25rem;
+    width: 1rem;
+    display: inline-block;
+    color: var(--grey);
+}
+
+.nav-tabs-faq .nav-link:not(.active) .toggle-icon {
+    color: #000;
+}
 
 @media (max-width: 768px) {
     .home__hero .hero__content {

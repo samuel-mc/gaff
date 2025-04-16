@@ -37,6 +37,22 @@ Flight::route('/acerca', function () {
     Flight::render('acerca.php', array('title' => 'Acerca'));
 });
 
+Flight::route('/enterate', function () {
+    Flight::render('enterate.php', array('title' => 'Enterate'));
+});
+
+Flight::route('/contacto', function () {
+    Flight::render('contacto.php', array('title' => 'Contacto'));
+});
+
+Flight::route('/faq', function () {
+    Flight::render('faq.php', array('title' => 'Faq'));
+});
+
+Flight::route('/videos', function () {
+    Flight::render('videos.php', array('title' => 'Videos'));
+});
+
 #404
 Flight::map('notFound', function () {
     // Display custom 404 page
