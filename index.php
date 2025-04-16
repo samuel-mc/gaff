@@ -28,6 +28,10 @@ Flight::route('/distributors/internationals', function () {
     Flight::render('internationals.php', array('title' => 'Internationals'));
 });
 
+Flight::route('/thanks', function () {
+    Flight::render('thanks.php', array('title' => 'Thanks'));
+});
+
 #404
 Flight::map('notFound', function () {
     // Display custom 404 page
