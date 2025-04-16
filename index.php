@@ -6,7 +6,7 @@ require 'flight/Flight.php';
 Flight::set('flight.log_errors', true);
 # Root route
 #define('__ROOT__', "http://localhost/gaff");
-define('__ROOT__', "http://localhost/proyectos/Sebas/habilita");
+define('__ROOT__', "http://localhost/proyectos/Sebas/gaff");
 
 
 Flight::route('/', function () {
@@ -31,6 +31,10 @@ Flight::route('/distributors/internationals', function () {
 
 Flight::route('/thanks', function () {
     Flight::render('thanks.php', array('title' => 'Thanks'));
+});
+
+Flight::route('/acerca', function () {
+    Flight::render('acerca.php', array('title' => 'Acerca'));
 });
 
 #404
