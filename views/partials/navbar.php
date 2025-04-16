@@ -1,7 +1,7 @@
 <?php $title = isset($title) ? $title : 'Gaff';
 ?>
 
-<header>
+<header style="background-color: #F4F4F4F5;">
     <!--  top part  -->
     <div class="px-4 py-2 bg--black d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div class="">
@@ -64,8 +64,18 @@
                 <li class="mx-3">
                     <a class="a--black" href="<?php echo __ROOT__; ?>/catalog"> Catálogo de productos</a>
                 </li>
-                <li class="mx-3">
-                    <a class="a--black" href="<?php echo __ROOT__; ?>/distributors"> Distribuidores</a>
+<!--                <li class="mx-3 dropdown">-->
+<!--                    <a class="a--black dropdown-toggle" href="--><?php //echo __ROOT__; ?><!--/distributors"> Distribuidores</a>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false" id="dropdownDistribuidores">
+                        Distribuidores
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="<?php echo __ROOT__; ?>/distributors/nationals">Nacionales</a></li>
+                        <li><a class="dropdown-item" href="<?php echo __ROOT__; ?>/distributors/internationals">Internacionales</a></li>
+                    </ul>
+                </li>
                 </li>
                 <li class="mx-3">
                     <a class="a--black" href="<?php echo __ROOT__; ?>/news"> Entérate</a>
@@ -100,7 +110,8 @@
                         <a class="nav-link a--black my-1" href="<?php echo __ROOT__; ?>/">Inicio</a>
                         <a class="nav-link a--black my-1" href="<?php echo __ROOT__; ?>/products">Productos</a>
                         <a class="nav-link a--black my-1" href="<?php echo __ROOT__; ?>/about">Acerca de nosotros</a>
-                        <a class="nav-link a--black my-1" href="<?php echo __ROOT__; ?>/catalog">Catálogo de productos</a>
+                        <a class="nav-link a--black my-1" href="<?php echo __ROOT__; ?>/catalog">Catálogo de
+                            productos</a>
                         <a class="nav-link a--black my-1" href="<?php echo __ROOT__; ?>/distributors">Distribuidores</a>
                         <a class="nav-link a--black my-1" href="<?php echo __ROOT__; ?>/news">Entérate</a>
                         <a class="nav-link a--black my-1" href="<?php echo __ROOT__; ?>/contact">Contacto</a>

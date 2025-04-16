@@ -234,6 +234,30 @@ html {
     display: none;
 }
 
+#dropdownDistribuidores.dropdown-toggle::after {
+    display: none;
+}
+
+.hero {
+    min-height: 280px;
+}
+
+.hero__distribuidores {
+    background-image: url("../img/distribuidores/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.estado.selected {
+    fill: orange; /* o el color que prefieras */
+}
+
+.distribuidor__frame {
+    width: 100%;
+    height: 320px;
+}
+
 @media (max-width: 768px) {
     .home__hero .hero__content {
         width: 100%;
