@@ -5,8 +5,7 @@ require 'flight/Flight.php';
 # Debug errors
 Flight::set('flight.log_errors', true);
 # Root route
-#define('__ROOT__', "http://localhost/gaff");
-define('__ROOT__', "http://localhost/proyectos/Sebas/gaff");
+define('__ROOT__', "http://localhost/gaff");
 
 
 Flight::route('/', function () {
@@ -33,15 +32,15 @@ Flight::route('/thanks', function () {
     Flight::render('thanks.php', array('title' => 'Thanks'));
 });
 
-Flight::route('/acerca', function () {
+Flight::route('/about', function () {
     Flight::render('acerca.php', array('title' => 'Acerca'));
 });
 
-Flight::route('/enterate', function () {
+Flight::route('/news', function () {
     Flight::render('enterate.php', array('title' => 'Enterate'));
 });
 
-Flight::route('/contacto', function () {
+Flight::route('/contact', function () {
     Flight::render('contacto.php', array('title' => 'Contacto'));
 });
 
@@ -53,7 +52,7 @@ Flight::route('/videos', function () {
     Flight::render('videos.php', array('title' => 'Videos'));
 });
 
-Flight::route('/catalogo', function () {
+Flight::route('/catalog', function () {
     Flight::render('catalogo.php', array('title' => 'Catalogo'));
 });
 
