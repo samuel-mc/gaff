@@ -50,6 +50,11 @@ html {
     background-image: url("../img/acerca/hero.png") !important;
 }
 
+.catalogo_hero {
+    background-image: url("../img/catalogo/hero.png") !important;
+    min-height: 340px !important;
+}
+
 .enterate_hero {
     background-image: url("../img/enterate/hero.png") !important;
     min-height: 340px !important;

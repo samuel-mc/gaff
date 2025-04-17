@@ -378,6 +378,7 @@ textarea {
     resize: none;
 }
 
+  
 @media (max-width: 1400px) {
     .grid--5cols {
         grid-template-columns: 1fr 1fr 1fr;

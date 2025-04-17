@@ -53,6 +53,10 @@ Flight::route('/videos', function () {
     Flight::render('videos.php', array('title' => 'Videos'));
 });
 
+Flight::route('/catalogo', function () {
+    Flight::render('catalogo.php', array('title' => 'Catalogo'));
+});
+
 #404
 Flight::map('notFound', function () {
     // Display custom 404 page
